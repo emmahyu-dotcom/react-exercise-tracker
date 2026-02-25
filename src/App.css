@@ -1,38 +1,62 @@
-.App {
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  margin-bottom: 30px;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+h2 {
+  margin-bottom: 20px;
+  text-align: center;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/* MENU BUTTONS */
+.menu {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.menu button {
+    margin: 8px 0;
+    font-size: 18px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* EXERCISE SCREEN */
+.exercise-screen {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* EXERCISE TITLE */
+.exercise-title {
+  font-size: 22px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+/* EXERCISE BUTTONS (Repetition & Duration) */
+.exercise-screen button {
+  margin: 8px 0;
+  font-size: 16px;
+}
+
+/* REPS COUNTER */
+span {
+  font-size: 20px;
+  font-weight: bold;
+  margin: 0 20px;
+}
+
+/* TIMER FOR DURATION */
+.timer-display {
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 20px;
 }
