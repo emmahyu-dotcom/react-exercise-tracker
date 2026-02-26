@@ -4,46 +4,42 @@ body {
   padding: 0;
 }
 
+/* MAIN-PAGE HEADER */
 h1 {
   margin-bottom: 30px;
   text-align: center;
 }
 
+/* SUB-PAGE HEADER */
 h2 {
   margin-bottom: 20px;
   text-align: center;
 }
 
-/* MENU BUTTONS */
+/* MENU PAGE */
 .menu {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-.menu button {
+.exercise-button {
     margin: 8px 0;
     font-size: 18px;
 }
 
-/* EXERCISE SCREEN */
-.exercise-screen {
+/* EXERCISE PAGE */
+.exercise-page {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
 /* EXERCISE TITLE */
-.exercise-title {
-  font-size: 22px;
-  margin-bottom: 20px;
+.back-button {
+  font-size: 15px;
+  margin: 8px;
   text-align: center;
-}
-
-/* EXERCISE BUTTONS (Repetition & Duration) */
-.exercise-screen button {
-  margin: 8px 0;
-  font-size: 16px;
 }
 
 /* REPS COUNTER */
