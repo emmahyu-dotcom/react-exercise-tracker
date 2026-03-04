@@ -1,6 +1,7 @@
 import React, {useState} from 'react';
 import RepetitionExercise from './components/RepetitionExercise';
 import DurationExercise from './components/DurationExercise';
+import RunningExercise from './components/RunningExercise';
 import './App.css';
 
 function App(){
@@ -8,7 +9,7 @@ function App(){
 
   const exercises = [
     {name: "Push Ups", type: "repetition"},
-    {name: "Running", type: "duration"},
+    {name: "Running", type: "running"},
     {name: "Plank", type: "duration"},
   ];
 
@@ -39,8 +40,10 @@ function App(){
 
               {selectedExercise.type === "repetition" ? (
                 <RepetitionExercise name={selectedExercise.name} />
-              ) : (
+              ) : selectedExercise.type === "duration" ? (
                 <DurationExercise name={selectedExercise.name} />
+              ) : (
+                <RunningExercise name={selectedExercise.name} />
               )}
 
               <button

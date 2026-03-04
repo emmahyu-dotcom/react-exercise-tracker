@@ -56,3 +56,12 @@ span {
   text-align: center;
   margin-bottom: 20px;
 }
+
+/* RUNNING EXERCISE HEADER */
+.running-display {
+  text-align: center;
+}
+
+.running-display h2, .running-display h3 {
+  margin: 10px 0;
+}
