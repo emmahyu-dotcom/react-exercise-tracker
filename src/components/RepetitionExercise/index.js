@@ -1,4 +1,5 @@
 import React, {useState} from 'react';
+import otter from "../../assets/PushUps_otter.mp4";
 
 function RepetitionExercise({name}) {
     const [count, setCount] = useState(0);
@@ -9,12 +10,17 @@ function RepetitionExercise({name}) {
     };
 
     return (
-        <div>
+        <div className="pushups-display">
             <h2>{name}</h2>
+
             <div>
                 <button onClick={reset}>Reset</button>
                 <span>{count}</span>
                 <button onClick={plusCount}>+</button>
+            </div>
+
+            <div className="pushups-otter">
+                <video src={otter} autoPlay loop muted playsInline />
             </div>
         </div>
     );

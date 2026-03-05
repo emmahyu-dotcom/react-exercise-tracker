@@ -1,67 +1,174 @@
+/* UPDATED EXERCISE APP */
+
 body {
-  font-family: 'Arial', sans-serif;
   margin: 0;
-  padding: 0;
+  background-color: hsl(10, 75%, 98%);
+  font-family: Arial, Helvetica, sans-serif;
 }
 
-/* MAIN-PAGE HEADER */
-h1 {
-  margin-bottom: 30px;
-  text-align: center;
-}
-
-/* SUB-PAGE HEADER */
-h2 {
-  margin-bottom: 20px;
-  text-align: center;
-}
-
-/* MENU PAGE */
-.menu {
+/* Main App wrapper */
+.App {
+  min-height: 100vh;
   display: flex;
-  flex-direction: column;
+  justify-content: center;
   align-items: center;
 }
 
+/* MENU PAGE */
+.menu-page {
+  width: 100%;
+  max-width: 420px;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+/* Title */
+.menu-page h1 {
+  color: hsl(253, 38%, 83%);
+  margin-bottom: 40px;
+  font-size: 28px;
+}
+
+/* Button */
+.menu {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+/* Main Exercise Buttons */
 .exercise-button {
-    margin: 8px 0;
-    font-size: 18px;
+  background-color: hsl(357, 54%, 86%);
+  border: none;
+  padding: 14px;
+  border-radius: 14px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.exercise-button:hover {
+  background-color: hsl(346, 48%, 88%);
 }
 
 /* EXERCISE PAGE */
 .exercise-page {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-/* EXERCISE TITLE */
-.back-button {
-  font-size: 15px;
-  margin: 8px;
+  width: 100%;
+  max-width: 420px;
+  padding: 30px 20px;
   text-align: center;
 }
 
-/* REPS COUNTER */
-span {
-  font-size: 20px;
-  font-weight: bold;
-  margin: 0 20px;
-}
-
-/* TIMER FOR DURATION */
-.timer-display {
-  font-size: 18px;
-  font-weight: bold;
-  text-align: center;
+/* Titles */
+h2 {
+  color: hsl(253, 38%, 83%);
   margin-bottom: 20px;
 }
 
-/* RUNNING EXERCISE HEADER */
-.running-display {
-  text-align: center;
+/* EXERCISE TITLES */
+.exercise-page h2,
+.running-display h2 {
+  color: hsl(253, 38%, 83%);
+  font-size: 36px;
+  font-weight: 700;
+  margin-bottom: 25px;
 }
 
-.running-display h2, .running-display h3 {
-  margin: 10px 0;
+/* Timer Display */
+.timer-display,
+h3 {
+  font-size: 32px;
+  color: hsl(269, 31%, 84%);
+  margin-bottom: 20px;
+}
+
+/* Buttons */
+button {
+  background-color: hsl(357, 54%, 86%);
+  border: none;
+  padding: 8px 14px;
+  margin: 6px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: hsl(346, 48%, 88%);
+}
+
+/* Back Button */
+.back-button {
+  margin-top: 25px;
+  display: block;
+  width: 100%;
+}
+
+/* RUNNING PAGE */
+.running-display {
+  border: none;
+  padding: 20px;
+  border-radius: 18px;
+  background-color: hsl(0, 0%, 100%);
+}
+
+/* PUSH UPS PAGE */
+.pushups-display {
+  border: none;
+  padding: 20px;
+  border-radius: 18px;
+  background-color: hsl(0, 0%, 100%);
+}
+
+/* PLANK PAGE */
+.plank-display {
+  border: none;
+  padding: 20px;
+  border-radius: 18px;
+  background-color: hsl(0, 0%, 100%);
+}
+
+/* All Videos */
+.running-otter {
+  margin: 20px 0;
+}
+
+.running-otter video {
+  width: 100%;
+  max-width: 300px;
+  border-radius: 14px;
+}
+
+.pushups-otter {
+  margin: 20px 0;
+}
+
+.pushups-otter video {
+  width: 100%;
+  max-width: 300px;
+  border-radius: 14px;
+}
+
+.plank-otter {
+  margin: 20px 0;
+}
+
+.plank-otter video {
+  width: 100%;
+  max-width: 300px;
+  border-radius: 14px;
+}
+
+/* Laps */
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  background-color: hsl(357, 54%, 86%);
+  font-size: 14px;
+  max-width: 250px;
+  margin: 6px auto;
+  padding: 8px;
+  border-radius: 10px;
 }

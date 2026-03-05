@@ -1,4 +1,5 @@
 import React, {useState, useEffect} from 'react';
+import otter from "../../assets/Plank_otter.mp4";
 
 function DurationExercise ({name}) {
     const [time, setTime] = useState(0);
@@ -26,12 +27,16 @@ function DurationExercise ({name}) {
     };
 
     return (
-        <div>
+        <div className="plank-display">
             <h2>{name}</h2>
             <div className="timer-display">{timerFormat(time)}</div>
             <button onClick={() => setRunning(true)}>Start</button>
             <button onClick={reset}>Reset</button>
             <button onClick={() => setRunning(false)}>Stop</button>
+
+            <div className="plank-otter">
+                <video src={otter} autoPlay loop muted playsInline />
+            </div>
         </div>
     );
 }

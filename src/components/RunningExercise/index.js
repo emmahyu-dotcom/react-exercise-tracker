@@ -1,4 +1,5 @@
 import React, {useState, useEffect} from 'react';
+import otter from "../../assets/Running_otter.mp4";
 
 function RunningExercise({name}) {
     const [time, setTime] = useState(0);
@@ -40,6 +41,10 @@ function RunningExercise({name}) {
             <button onClick={() => setRunning(false)}>Stop</button>
             <button onClick={lapLogs}>Lap</button>
             <button onClick={reset}>Reset</button>
+
+            <div className="running-otter">
+                <video src={otter} autoPlay loop muted playsInline />
+            </div>
 
             <h4>Laps</h4>
             <ul>
