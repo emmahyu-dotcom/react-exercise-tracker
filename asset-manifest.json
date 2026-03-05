@@ -1,15 +1,18 @@
 {
   "files": {
-    "main.css": "/react-exercise-tracker/static/css/main.f3971a25.css",
-    "main.js": "/react-exercise-tracker/static/js/main.276e6181.js",
+    "main.css": "/react-exercise-tracker/static/css/main.24dbe297.css",
+    "main.js": "/react-exercise-tracker/static/js/main.89df90de.js",
     "static/js/453.716317c4.chunk.js": "/react-exercise-tracker/static/js/453.716317c4.chunk.js",
+    "static/media/Running_otter.mp4": "/react-exercise-tracker/static/media/Running_otter.a59b3042c900bcf6d27a.mp4",
+    "static/media/Plank_otter.mp4": "/react-exercise-tracker/static/media/Plank_otter.4a9e5b1ffab972580fff.mp4",
+    "static/media/PushUps_otter.mp4": "/react-exercise-tracker/static/media/PushUps_otter.4cf0ac84616f8c28e240.mp4",
     "index.html": "/react-exercise-tracker/index.html",
-    "main.f3971a25.css.map": "/react-exercise-tracker/static/css/main.f3971a25.css.map",
-    "main.276e6181.js.map": "/react-exercise-tracker/static/js/main.276e6181.js.map",
+    "main.24dbe297.css.map": "/react-exercise-tracker/static/css/main.24dbe297.css.map",
+    "main.89df90de.js.map": "/react-exercise-tracker/static/js/main.89df90de.js.map",
     "453.716317c4.chunk.js.map": "/react-exercise-tracker/static/js/453.716317c4.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.f3971a25.css",
-    "static/js/main.276e6181.js"
+    "static/css/main.24dbe297.css",
+    "static/js/main.89df90de.js"
   ]
 }
